@@ -21,38 +21,38 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-24 px-6 bg-background">
+    <section className="py-16 md:py-24 px-4 md:px-6 bg-background">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-20 animate-luxury-fade">
-          <h2 className="font-display text-4xl md:text-5xl font-light text-primary mb-6 tracking-tight">
+        <div className="text-center mb-16 md:mb-20 animate-luxury-fade">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-light text-primary mb-4 md:mb-6 tracking-tight">
             Our Services
           </h2>
-          <p className="font-serif text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="font-serif text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             We offer comprehensive design solutions tailored to your unique vision and lifestyle, ensuring every project exceeds expectations.
           </p>
         </div>
         
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {services.map((service, index) => (
             <Card 
               key={service.title}
               className="border-0 shadow-card bg-card hover:shadow-luxury transition-all duration-700 animate-scale-luxury group"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <CardContent className="p-10 text-center">
+              <CardContent className="p-6 md:p-8 lg:p-10 text-center">
                 {/* Icon */}
-                <div className="w-20 h-20 mx-auto mb-8 bg-gradient-gold rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                  <service.icon className="w-10 h-10 text-gold-foreground" />
+                <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-6 md:mb-8 bg-gradient-gold rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                  <service.icon className="w-8 h-8 md:w-10 md:h-10 text-gold-foreground" />
                 </div>
                 
                 {/* Content */}
-                <h3 className="font-display text-2xl font-medium text-primary mb-6 tracking-tight">
+                <h3 className="font-display text-xl md:text-2xl font-medium text-primary mb-4 md:mb-6 tracking-tight">
                   {service.title}
                 </h3>
                 
-                <p className="font-serif text-muted-foreground leading-relaxed">
+                <p className="font-serif text-sm md:text-base text-muted-foreground leading-relaxed">
                   {service.description}
                 </p>
               </CardContent>

@@ -20,30 +20,30 @@ const Hero = () => {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto animate-luxury-fade">
-        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-light text-background mb-8 tracking-tight">
+      <div className="relative z-10 text-center px-4 md:px-6 max-w-4xl mx-auto animate-luxury-fade">
+        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light text-background mb-6 md:mb-8 tracking-tight leading-tight">
           Crafting Spaces of{' '}
-          <span className="block font-serif italic text-gold">Timeless Elegance</span>
+          <span className="block font-serif italic text-gold mt-2">Timeless Elegance</span>
         </h1>
         
-        <p className="font-serif text-xl md:text-2xl text-background/90 mb-12 max-w-2xl mx-auto leading-relaxed">
+        <p className="font-serif text-lg sm:text-xl md:text-2xl text-background/90 mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed">
           Where sophisticated design meets unparalleled craftsmanship, creating interiors that inspire and endure.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center">
           <Button 
             onClick={scrollToPortfolio}
-            variant="secondary"
+            variant="hero"
             size="lg"
-            className="bg-background/95 text-primary hover:bg-background hover:shadow-gold transition-all duration-500 px-12 py-6 text-lg font-display tracking-wide"
+            className="px-8 md:px-12 py-4 md:py-6 text-base md:text-lg font-display tracking-wide min-w-[200px]"
           >
             View Portfolio
           </Button>
           
           <Button 
-            variant="outline"
+            variant="heroOutline"
             size="lg"
-            className="border-background/50 text-background hover:bg-background/10 hover:border-background transition-all duration-500 px-12 py-6 text-lg font-display tracking-wide"
+            className="px-8 md:px-12 py-4 md:py-6 text-base md:text-lg font-display tracking-wide min-w-[200px]"
           >
             Our Services
           </Button>

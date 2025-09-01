@@ -45,14 +45,14 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-24 px-6 bg-gradient-hero">
+    <section className="py-16 md:py-24 px-4 md:px-6 bg-gradient-hero">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16 animate-luxury-fade">
-          <h2 className="font-display text-4xl md:text-5xl font-light text-primary mb-6 tracking-tight">
+        <div className="text-center mb-12 md:mb-16 animate-luxury-fade">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-light text-primary mb-4 md:mb-6 tracking-tight">
             Client Testimonials
           </h2>
-          <p className="font-serif text-xl text-muted-foreground">
+          <p className="font-serif text-lg md:text-xl text-muted-foreground">
             The voices of those who have experienced our dedication to excellence.
           </p>
         </div>
@@ -60,25 +60,25 @@ const Testimonials = () => {
         {/* Carousel */}        
         <div className="relative">
           <Card className="border-0 shadow-luxury bg-card/95 backdrop-blur-sm">
-            <CardContent className="p-12 text-center">
+            <CardContent className="p-8 md:p-10 lg:p-12 text-center">
               {/* Stars */}
-              <div className="flex justify-center mb-8">
+              <div className="flex justify-center mb-6 md:mb-8">
                 {[...Array(testimonials[currentSlide].rating)].map((_, i) => (
-                  <Star key={i} className="w-6 h-6 text-gold fill-current" />
+                  <Star key={i} className="w-5 h-5 md:w-6 md:h-6 text-gold fill-current" />
                 ))}
               </div>
               
               {/* Quote */}  
-              <blockquote className="font-serif text-xl md:text-2xl text-primary leading-relaxed mb-10 italic">
+              <blockquote className="font-serif text-lg md:text-xl lg:text-2xl text-primary leading-relaxed mb-8 md:mb-10 italic">
                 "{testimonials[currentSlide].content}"
               </blockquote>
               
               {/* Author */}
               <div className="font-display">
-                <p className="text-lg font-medium text-primary mb-1">
+                <p className="text-base md:text-lg font-medium text-primary mb-1">
                   {testimonials[currentSlide].name}
                 </p>
-                <p className="text-muted-foreground tracking-wide">
+                <p className="text-sm md:text-base text-muted-foreground tracking-wide">
                   {testimonials[currentSlide].title}
                 </p>
               </div>

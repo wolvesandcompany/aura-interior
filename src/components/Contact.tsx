@@ -32,23 +32,23 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-24 px-6 bg-primary text-primary-foreground">
+    <section className="py-16 md:py-24 px-4 md:px-6 bg-primary text-primary-foreground">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-20 animate-luxury-fade">
-          <h2 className="font-display text-4xl md:text-5xl font-light mb-6 tracking-tight">
+        <div className="text-center mb-16 md:mb-20 animate-luxury-fade">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-light mb-4 md:mb-6 tracking-tight">
             Start Your Journey
           </h2>
-          <p className="font-serif text-xl text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="font-serif text-lg md:text-xl text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">
             Ready to transform your space? Let's discuss your vision and create something extraordinary together.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16">
           {/* Contact Form */}
           <Card className="border-0 bg-background/95 shadow-luxury">
-            <CardContent className="p-10">
-              <h3 className="font-display text-2xl font-medium text-primary mb-8 tracking-tight">
+            <CardContent className="p-6 md:p-8 lg:p-10">
+              <h3 className="font-display text-xl md:text-2xl font-medium text-primary mb-6 md:mb-8 tracking-tight">
                 Send us a Message
               </h3>
               
@@ -60,7 +60,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="border-warm-medium focus:border-accent h-14 text-lg font-serif"
+                    className="border-warm-medium focus:border-accent h-12 md:h-14 text-base md:text-lg font-serif"
                   />
                 </div>
                 
@@ -72,7 +72,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="border-warm-medium focus:border-accent h-14 text-lg font-serif"
+                    className="border-warm-medium focus:border-accent h-12 md:h-14 text-base md:text-lg font-serif"
                   />
                 </div>
                 
@@ -84,13 +84,14 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows={6}
-                    className="border-warm-medium focus:border-accent text-lg font-serif resize-none"
+                    className="border-warm-medium focus:border-accent text-base md:text-lg font-serif resize-none"
                   />
                 </div>
                 
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-gold hover:shadow-gold text-gold-foreground h-14 text-lg font-display tracking-wide transition-all duration-500"
+                  variant="luxury"
+                  className="w-full h-12 md:h-14 text-base md:text-lg font-display tracking-wide"
                 >
                   Send Message
                 </Button>
